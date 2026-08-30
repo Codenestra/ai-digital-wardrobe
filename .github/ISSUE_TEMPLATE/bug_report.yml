@@ -1,0 +1,63 @@
+name: 缺陷报告
+description: 报告可以稳定复现的应用问题
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: 请勿提交真实 API Key、Workspace ID、个人照片或签名材料。
+  - type: textarea
+    id: summary
+    attributes:
+      label: 问题描述
+      description: 清楚描述实际行为和期望行为。
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开……
+        2. 点击……
+        3. 看到……
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 版本或提交
+      placeholder: 1.0.0 或 commit SHA
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: 设备与 Android 版本
+      placeholder: Pixel 8 / Android 15
+    validations:
+      required: true
+  - type: dropdown
+    id: network
+    attributes:
+      label: 是否涉及 AI 或网络
+      options:
+        - 否，纯本地功能
+        - 是，固定响应或错误注入
+        - 是，真实服务商调用
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 脱敏日志或截图
+      description: 上传前请彻底删除凭据、请求头和个人信息。
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我已确认报告中不含真实凭据或个人数据。
+          required: true
+        - label: 我已搜索现有 Issue，未发现相同问题。
+          required: true

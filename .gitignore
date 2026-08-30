@@ -1,0 +1,32 @@
+/.gradle/
+/.gradle-user-home/
+/.kotlin/
+/.tooling/
+/.idea/
+/local.properties
+**/build/
+*.jks
+*.keystore
+*.apk
+*.aab
+/deliverables/
+/output/
+/test-evidence/
+/private-test-inputs/
+/private-signing/
+/tmp/
+/videos/
+*.log
+captures/
+.cxx/
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.properties.local
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <exclude domain="sharedpref" path="secure_secrets.xml" />
+    <exclude domain="database" path="wardrobe.db" />
+    <exclude domain="file" path="temporary_uploads/" />
+</full-backup-content>
